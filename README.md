@@ -67,3 +67,28 @@ Las siguientes preguntas están orientadas a la comprensión del protocolo HTTP.
 9. **Explicar brevemente el estándar SOAP:** SOAP o tambien conocido como Simple Object Access Protocol, es un protocolo de mensajeria utilizada para el intercambio de datos entre aplicaciones web, en donde SOAP hace uso del lenguaje XML y el protocolo HTTP como protocolo de transporte. SOAP suele tener uso en servicios web, comunicación entre aplicaciones e integración de sistemas, lo que lo hace un estandar muy abierto a una amplia gama de aplicaciones.
 10. **Explicar brevemente el estándar REST Full:** Los servicios REST o Representational State Transfer, es una base de principios de arquitectura utilizado para desarrollar y diseñar servicios web, utilizando HTTP y URI el cual se encarga de la identificación de recursos. Al igual que SOAP tiene una amplia gama de aplicaciones, sin embargo REST tiene una gran facilidad para entender y una buena eficiencia.
 11. **¿Qué son los headers en un request? ¿Para qué se utiliza el key Content-type en un header?:** Como ya se ha mencionado anteriormente, son los pares clave-valor que se envian en la solicitud HTTP, donde estos proporcionan información adicional sobre tipo de contenido, tamaño de contenido o la autenticación del usuario. Por el lado del key Content-type en un header, este indicara el tipo de contenido que se esta enviando en el body del request, ya sea en HTTP, JSON, XML e incluso otros formatos.
+
+## Ejercicio 3
+1. Realizar un request GET a la URL: https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json
+   ![image](https://github.com/andresdorado13/EvaluacionPracticaProContacto/assets/64713965/41f52ecb-982f-410a-8fb8-3a62ada3dd4a)
+
+2. Realizar un request POST a la URL anterior, y con body:
+    ```json
+        {
+            "name":"Tu nombre",
+            "email":"tunombre.tuapellido@procontacto.com.mx"
+        }
+    ```
+    Tip: (Marcar la opción “raw” como body)
+    ![image](https://github.com/andresdorado13/EvaluacionPracticaProContacto/assets/64713965/aec594ff-4f36-4f3e-a1a9-a562fa486c8d)
+
+3. Realizar nuevamente un request GET a la URL: https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json
+   ![image](https://github.com/andresdorado13/EvaluacionPracticaProContacto/assets/64713965/42a8d81f-23a1-4221-ab18-6e26d9e35892)
+
+### ¿Qué diferencias se observan entre las llamadas el punto 1 y 3?
+En el punto 1 al hacer el GET en la URL indicada, habian registros previos de contactos con nombres y correos de personas diferentes a mi, mientras que en el punto 3 al hacer la llamada aparecen los registros nuevamente con la diferencia de que aparecian mis datos registrados a partir del punto 2, donde realice un metodo POST.
+
+# Ejercicio 4
+Link para ver mi perfil con los cursos: https://www.salesforce.com/trailblazer/andresdorado
+
+# Ejercicio 5
