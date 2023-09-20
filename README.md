@@ -6,6 +6,7 @@ Este archivo esta hecho con el objetivo de aprender y mostrar mis conocimientos 
 * [Ejercicio 3](#ejercicio-3)
 * [Ejercicio 4](#ejercicio-4)
 * [Ejercicio 5](#ejercicio-5)
+* [Ejercicio 6](#ejercicio-6)
 
 ## Ejercicio 1
 ### Instalación de ambiente
@@ -98,3 +99,29 @@ En el punto 1 al hacer el GET en la URL indicada, habian registros previos de co
 Link para ver mi perfil con los cursos: https://www.salesforce.com/trailblazer/andresdorado
 
 # Ejercicio 5
+
+# Ejercicio 6
+## Soluciones de Salesforce
+1. **¿Qué es Salesforce?:** Es una plataforma de software de gestión de relaciones con el cliente (CRM) basada en la nube que ayuda a las empresas a conectar con sus clientes, comprender sus necesidades y venderles de manera más efectiva, ademas este ofrece una amplia gama de productos y servicios que se encuentran en las áreas de ventas, marketing, comercio y servicio al cliente.
+2. **¿Qué es Sales Cloud?:** Es una plataforma de gestión CRM desarrollada por Salesforce y está diseñado específicamente para ayudar a las empresas a administrar y automatizar sus procesos de ventas y marketing, así como a mejorar la colaboración entre equipos de ventas y servicio al cliente.
+3. **¿Qué es Service Cloud?:** Es una solución de servicio al cliente de Salesforce que ayuda a las empresas a brindar un servicio al cliente excepcional a través de múltiples canales, incluidos teléfono, correo electrónico, autoservicio, entre otros.
+4. **¿Qué es Health Cloud?:** Es una solución de gestión de pacientes y CRM de atención médica basada en la nube que permite la colaboración entre proveedores de atención médica, pagadores y pacientes. Health Cloud ofrece una amplia gama de funciones para ayudar a las organizaciones de atención médica a mejorar la atención al paciente, la eficiencia y los resultados.
+5. **¿Qué es Marketing Cloud?:** Es una plataforma de marketing digital basada en la nube que ayuda a las empresas a crear y ejecutar campañas de marketing efectivas a través de múltiples canales, incluidos correo electrónico, redes sociales, dispositivos móviles y publicidad digital.
+
+## Funcionalidades de Salesforce
+1. **¿Qué es un RecordType?:** Es una configuración que permite la personalización de la forma en que se recopilan y presentan los datos en un objeto personalizable. Los RecordTypes se usan para tanto objetos estandar como personalizados, los cuales tienen diferentes conjuntos de campos o procesos comerciales asociados.
+2. **¿Qué es un ReportType?:** 
+3. **¿Qué es un Page Layout?:** 
+4. **¿Qué es un Compact Layout?:** 
+5. **¿Qué es un Perfil?:** 
+6. **¿Qué es un Rol?:** 
+7. **¿Qué es un Validation Rule?:** 
+8. **¿Qué diferencia hay entre una relación Master Detail y Lookup?:** 
+9. **¿Qué es un Sandbox?:** 
+10. **¿Qué es un ChangeSet?:** 
+11. **¿Para qué sirve el import Wizard de Salesforce?:** 
+12. **¿Para qué sirve la funcionalidad Web to Lead?:** 
+13. **¿Para qué sirve la funcionalidad Web to Case?:** 
+14. **¿Para qué sirve la funcionalidad Omnichannel?:** 
+15. **¿Para qué sirve la funcionalidad Chatter?:** 
+
