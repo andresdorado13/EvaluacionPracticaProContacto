@@ -120,8 +120,24 @@ Link para ver mi perfil con los cursos: https://www.salesforce.com/trailblazer/a
 9. **¿Qué es un Sandbox?:** Es un entorno aislado y seguro que permite a las organizaciones desarrollar, probar y realizar cambios en sus aplicaciones y configuraciones de Salesforce sin afectar al entorno de producción en vivo.
 10. **¿Qué es un ChangeSet?:** Es una herramienta de Salesforce que se utiliza para gestionar y mover metadatos entre diferentes entornos de Salesforce, como sandbox y producción, o entre diferentes organizaciones Salesforce.
 11. **¿Para qué sirve el import Wizard de Salesforce?:** Es una herramienta que facilita la importación de datos desde fuentes externas a tu organización de Salesforce. Esta se usa para migrar datos desde otras aplicaciones, hojas de cálculo de Excel u otras fuentes de datos a la instancia de Salesforce.
-12. **¿Para qué sirve la funcionalidad Web to Lead?:** 
-13. **¿Para qué sirve la funcionalidad Web to Case?:** 
-14. **¿Para qué sirve la funcionalidad Omnichannel?:** 
-15. **¿Para qué sirve la funcionalidad Chatter?:** 
+12. **¿Para qué sirve la funcionalidad Web to Lead?:** Es una característica que permite a las organizaciones capturar automáticamente la información de contacto de los visitantes de su sitio web y convertirla en registros de "Lead" (visitantes como posibles clientes) en su instancia de Salesforce. 
+13. **¿Para qué sirve la funcionalidad Web to Case?:** Es una característica que permite a las organizaciones capturar automáticamente las solicitudes de soporte o casos de los clientes y visitantes de su sitio web y convertirlas en registros de "Case" (caso o solicitud de soporte) en su instancia de Salesforce. 
+14. **¿Para qué sirve la funcionalidad Omnichannel?:** Se utiliza para mejorar y optimizar la gestión de interacciones y casos de servicio al cliente en múltiples canales, lo que permite brindar una experiencia de atención al cliente más fluida y consistente.
+15. **¿Para qué sirve la funcionalidad Chatter?:** Chatter funciona como una herramienta de colaboración y comunicación social que sirve para mejorar la comunicación y la interacción entre los usuarios en una organización.
+
+## Conceptos generales
+1. **¿Qué significa SaaS?:** 
+2. **¿Salesforce es Saas?:** 
+3. **¿Qué significa que una solución sea Cloud?:** 
+4. **¿Qué significa que una solución sea On-Premise?:** 
+5. **¿Qué es un pipeline de ventas?:** 
+6. **¿Qué es un funnel de ventas?:** 
+7. **¿Qué significa Customer Experience?:** 
+8. **¿Qué significa omnicanalidad?:** 
+9. **¿Qué significa que un negocio sea B2B?¿Qué significa que un negocio sea B2C?¿Qué es un KPI?:** 
+10. **¿Qué es una API y en qué se diferencia de una Rest API?:** 
+11. **¿Qué es un Proceso Batch?:** 
+12. **¿Qué es Kanban?:** 
+13. **¿Qué es un ERP?:** 
+14. **¿Salesforce es un ERP?:** 
 
