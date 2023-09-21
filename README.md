@@ -110,16 +110,16 @@ Link para ver mi perfil con los cursos: https://www.salesforce.com/trailblazer/a
 
 ## Funcionalidades de Salesforce
 1. **¿Qué es un RecordType?:** Es una configuración que permite la personalización de la forma en que se recopilan y presentan los datos en un objeto personalizable. Los RecordTypes se usan para tanto objetos estandar como personalizados, los cuales tienen diferentes conjuntos de campos o procesos comerciales asociados.
-2. **¿Qué es un ReportType?:** 
-3. **¿Qué es un Page Layout?:** 
-4. **¿Qué es un Compact Layout?:** 
-5. **¿Qué es un Perfil?:** 
-6. **¿Qué es un Rol?:** 
-7. **¿Qué es un Validation Rule?:** 
-8. **¿Qué diferencia hay entre una relación Master Detail y Lookup?:** 
-9. **¿Qué es un Sandbox?:** 
-10. **¿Qué es un ChangeSet?:** 
-11. **¿Para qué sirve el import Wizard de Salesforce?:** 
+2. **¿Qué es un ReportType?:** Un Report Type determina qué objetos y relaciones están disponibles para su uso en un informe (son herramientas que permiten a los usuarios analizar y visualizar datos de sus objetos estándar y personalizados). Cuando se crea un informe, se debe seleccionar un Report Type para establecer qué datos puedes incluir en ese informe.
+3. **¿Qué es un Page Layout?:** Es una configuración que define la apariencia y la disposición de los campos y secciones en la interfaz de usuario de un registro de un objeto.
+4. **¿Qué es un Compact Layout?:** Es una configuración que define qué campos y etiquetas se muestran de manera resumida en la parte superior de un registro en la vista de lista, la vista de detalles y en la tarjeta de resumen. 
+5. **¿Qué es un Perfil?:** Es una configuración que asigna las capacidades y el acceso a datos que un usuario o grupo de usuarios tiene dentro de la plataforma. Los perfiles son una parte esencial del modelo de seguridad y acceso de Salesforce y se utilizan para controlar quién puede ver, editar, eliminar o compartir registros y qué acciones pueden realizar en la plataforma.
+6. **¿Qué es un Rol?:** Es una entidad que se utiliza para definir la jerarquía de acceso y la estructura organizativa dentro de una organización.
+7. **¿Qué es un Validation Rule?:** Es una regla lógica de validación que se utiliza para garantizar que los datos ingresados en los registros cumplan con ciertos criterios específicos antes de que se puedan guardar o actualizar.
+8. **¿Qué diferencia hay entre una relación Master Detail y Lookup?:** La principal diferencia entre una relación Master-Detail y Lookup en Salesforce radica en la dependencia y el control. Una relación Master-Detail crea una fuerte dependencia entre los registros de detalle y maestro, mientras que una relación Lookup es más flexible y permite que los registros de detalle existan de forma independiente. 
+9. **¿Qué es un Sandbox?:** Es un entorno aislado y seguro que permite a las organizaciones desarrollar, probar y realizar cambios en sus aplicaciones y configuraciones de Salesforce sin afectar al entorno de producción en vivo.
+10. **¿Qué es un ChangeSet?:** Es una herramienta de Salesforce que se utiliza para gestionar y mover metadatos entre diferentes entornos de Salesforce, como sandbox y producción, o entre diferentes organizaciones Salesforce.
+11. **¿Para qué sirve el import Wizard de Salesforce?:** Es una herramienta que facilita la importación de datos desde fuentes externas a tu organización de Salesforce. Esta se usa para migrar datos desde otras aplicaciones, hojas de cálculo de Excel u otras fuentes de datos a la instancia de Salesforce.
 12. **¿Para qué sirve la funcionalidad Web to Lead?:** 
 13. **¿Para qué sirve la funcionalidad Web to Case?:** 
 14. **¿Para qué sirve la funcionalidad Omnichannel?:** 
