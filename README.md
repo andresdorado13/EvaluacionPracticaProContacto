@@ -7,6 +7,7 @@ Este archivo esta hecho con el objetivo de aprender y mostrar mis conocimientos 
 * [Ejercicio 4](#ejercicio-4)
 * [Ejercicio 5](#ejercicio-5)
 * [Ejercicio 6](#ejercicio-6)
+* [Ejercicio 7](#ejercicio-7)
 
 ## Ejercicio 1
 ### Instalación de ambiente
@@ -100,6 +101,7 @@ Link para ver mi perfil con los cursos: https://www.salesforce.com/trailblazer/a
 
 # Ejercicio 5
 
+
 # Ejercicio 6
 ## Soluciones de Salesforce
 1. **¿Qué es Salesforce?:** Es una plataforma de software de gestión de relaciones con el cliente (CRM) basada en la nube que ayuda a las empresas a conectar con sus clientes, comprender sus necesidades y venderles de manera más efectiva, ademas este ofrece una amplia gama de productos y servicios que se encuentran en las áreas de ventas, marketing, comercio y servicio al cliente.
@@ -126,18 +128,22 @@ Link para ver mi perfil con los cursos: https://www.salesforce.com/trailblazer/a
 15. **¿Para qué sirve la funcionalidad Chatter?:** Chatter funciona como una herramienta de colaboración y comunicación social que sirve para mejorar la comunicación y la interacción entre los usuarios en una organización.
 
 ## Conceptos generales
-1. **¿Qué significa SaaS?:** 
-2. **¿Salesforce es Saas?:** 
-3. **¿Qué significa que una solución sea Cloud?:** 
-4. **¿Qué significa que una solución sea On-Premise?:** 
-5. **¿Qué es un pipeline de ventas?:** 
-6. **¿Qué es un funnel de ventas?:** 
-7. **¿Qué significa Customer Experience?:** 
-8. **¿Qué significa omnicanalidad?:** 
-9. **¿Qué significa que un negocio sea B2B?¿Qué significa que un negocio sea B2C?¿Qué es un KPI?:** 
-10. **¿Qué es una API y en qué se diferencia de una Rest API?:** 
-11. **¿Qué es un Proceso Batch?:** 
-12. **¿Qué es Kanban?:** 
-13. **¿Qué es un ERP?:** 
-14. **¿Salesforce es un ERP?:** 
+1. **¿Qué significa SaaS?:** El significado de SaaS es Software as a Service, un modelo de distribución de software en el que el software se proporciona a los usuarios a través de Internet como un servicio en lugar de requerir que lo instalen y lo ejecuten en sus propios dispositivos o servidores locales.
+2. **¿Salesforce es Saas?:** Salesforce si es SaaS, debido a que los usuarios pueden acceder a su plataforma y aplicaciones a través de Internet mediante una suscripción. Salesforce gestiona toda la infraestructura subyacente, incluido el almacenamiento de datos, la seguridad y las actualizaciones de software, en donde los usuarios pueden utilizarlo para realizar actividades relacionadas con la gestión de clientes, como la administración de contactos, el seguimiento de ventas, la gestión de campañas de marketing y la atención al cliente, todo ello desde la comodidad de una interfaz basada en la web o a través de aplicaciones móviles.
+3. **¿Qué significa que una solución sea Cloud?:** Significa que no requiere de instalar ni mantener maquinas propias para el software, sino por otro lado, el software o servicio se encuentra en servidores remotos y se puede acceder a estos a traves de internet en vez de instalar.
+4. **¿Qué significa que una solución sea On-Premise?:** Da lugar a que el software o servicio se instala y ejecuta en servidores locales o en la infraestructura de la empresa, en lugar de ejecutarse en servidores remotos en la nube. 
+5. **¿Qué es un pipeline de ventas?:** Es una representación visual o conceptual del proceso que sigue una empresa para adquirir nuevos clientes y convertirlos en ventas, proporcionando formas de rastrear y gestionar oportunidades de ventas.
+6. **¿Qué es un funnel de ventas?:** Tiene un concepto parecido a pipeline de ventas, pero se enfoca más en el proceso de adquirir y convertir clientes potenciales en clientes reales a medida que avanzan a través de varias etapas. 
+7. **¿Qué significa Customer Experience?:** Es la percepción general que tiene un cliente sobre todas las interacciones y puntos de contacto que tiene con una empresa a lo largo de su ciclo de vida como cliente.
+8. **¿Qué significa omnicanalidad?:** Es un enfoque estratégico en el ámbito del marketing y la atención al cliente que se centra en proporcionar una experiencia consistente y unificada a los clientes a través de múltiples canales de comunicación y puntos de contacto. 
+9. **¿Qué significa que un negocio sea B2B?¿Qué significa que un negocio sea B2C?¿Qué es un KPI?:**
+   * B2B significa Business to Business, lo que se refiere a las transacciones comerciales y relaciones entre las empresas.
+   * B2C significa Business to Consumer, lo que se refiere a las transacciones comerciales entre una empresa y sus consumidores individuales.
+   * KPI significa Key Performance Indicator, la cual es una métrica utilizada para medir y evaluar el desempeño de una empresa, un proyecto o un proceso.
+10. **¿Qué es una API y en qué se diferencia de una Rest API?:** Una API es un conjunto de reglas y protocolos que permiten que diferentes aplicaciones o componentes de software se comuniquen entre sí. Las APIs definen cómo los programas pueden solicitar y compartir datos y funcionalidades. Por otro lado las Rest APIs son un tipo especifico de APIs que siguen un conjunto de principios y protocolos particulares para facilitar la comunicación de aplicaciones web a traves de HTTP.
+11. **¿Qué es un Proceso Batch?:** Es un procesamiento de datos en la que un conjunto de tareas o trabajos se agrupan y se ejecutan en lotes predefinidos en lugar de procesarse de forma individual y en tiempo real. 
+12. **¿Qué es Kanban?:** Es una metodología de gestión que se utiliza para optimizar el flujo de trabajo y la eficiencia de procesos.
+13. **¿Qué es un ERP?:** ERP significa Enterprise Resource Planning, lo que se refiere a un sistema de planificación de recursos empresariales que integra y administra una variedad de procesos y funciones comerciales clave en una organización.
+14. **¿Salesforce es un ERP?:** No, ya que un ERP se ocupa de una amplia variedad de procesos empresariales, incluyendo la gestión financiera, la gestión de recursos humanos, la gestión de inventarios y cadenas de suministro, la producción y más. En cambio, Salesforce se especializa en la gestión de las interacciones con los clientes(CRM) y la gestión de ventas.
 
+# Ejercicio 7
