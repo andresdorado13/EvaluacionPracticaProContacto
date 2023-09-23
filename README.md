@@ -100,7 +100,39 @@ En el punto 1 al hacer el GET en la URL indicada, habian registros previos de co
 Link para ver mi perfil con los cursos: https://www.salesforce.com/trailblazer/andresdorado
 
 # Ejercicio 5
-
+Datos almacenados de forma estándar y como se relacionan los objetos en Salesforce:
+1. **Lead (Cliente potencial):**
+   * Es un cliente potencial que demostró interés en un producto o servicio ofrecido por la marca por medio de la interacción con contenidos y otros materiales.
+   * Los leads puede convertirse en contactos, cuentas y oportunidades una vez se hayan establecido un interés genuino.
+2. **Account (Cuenta):**
+   * Es una cuenta individual, que es una organización o persona involucrada con su negocio (como clientes, competidores y socios).
+   * Una cuenta puede tener muchas oportunidades, contactos, cuentas, casos y activos.
+3. **Contact (Contacto):**
+   * Representa a una persona individual con la que la empresa tiene una relación, generalmente asociada a una cuenta.
+   * Un contacto solo tiene una cuenta y tiene muchos contactos, casos y activos.
+4. **Opportunity (Oportunidad):**
+   * Es una venta potencial o una transacción en curso con un cliente o una cuenta.
+   * Una oportunidad tiene una cuenta y un libro de precios, pero tiene muchas cotizaciones.
+5. **Product (Producto):**
+   * Es un artículo o servicio que la empresa vende.
+   * Un producto puede tener muchos productos, casos, activos y cotizaciones.
+6. **PriceBook (Catálogo de precios):**
+   * Un conjunto de precios para productos específicos en diferentes situaciones o mercados.
+   * Un catálogo de precios puede tener muchas oportunidades.
+7. **Quote (Cotización):**
+   * Una propuesta de precios para productos o servicios que se ofrece a un cliente.
+   * Las cotizaciones están relacionadas con una oportunidad y muchos productos.
+8. **Asset (Activo):**
+   * Un producto o servicio que un cliente ha adquirido y está siendo utilizado.
+   * Un activo puede tener solo un contacto, cuenta y producto, aunque puede tener muchos casos relacionados.
+9. **Case (Caso):**
+   * Representa una solicitud, problema o consulta de un cliente que necesita ser gestionado.
+   * Un caso solo tiene un contacto, cuenta, activo y producto relacionado, pero puede tener muchos casos y artículos.
+10. **Article (Artículo):**
+   * Es información útil o documentos que pueden ser utilizados para el soporte al cliente.
+   * Los artículos a menudo se utilizan en la resolución de muchos casos para proporcionar información a los clientes.
+## Diagrama de relaciones
+![image](https://github.com/andresdorado13/EvaluacionPracticaProContacto/assets/64713965/03aed5f3-13a4-45ac-8d5d-9206af157d66)
 
 # Ejercicio 6
 ## Soluciones de Salesforce
