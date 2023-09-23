@@ -179,3 +179,64 @@ Datos almacenados de forma estándar y como se relacionan los objetos en Salesfo
 14. **¿Salesforce es un ERP?:** No, ya que un ERP se ocupa de una amplia variedad de procesos empresariales, incluyendo la gestión financiera, la gestión de recursos humanos, la gestión de inventarios y cadenas de suministro, la producción y más. En cambio, Salesforce se especializa en la gestión de las interacciones con los clientes(CRM) y la gestión de ventas.
 
 # Ejercicio 7
+1. Consultar tu ID haciendo un GET con POSTMAN a este WS: https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json
+![image](https://github.com/andresdorado13/EvaluacionPracticaProContacto/assets/64713965/c96a964e-a253-439e-9862-f2573993772a)
+2. Agregar un campo al objeto Contact llamado idprocontacto de tipo texto de 255 caracteres. De la siguiente manera:
+![image](https://github.com/andresdorado13/EvaluacionPracticaProContacto/assets/64713965/6f6da0d5-798c-4503-b8c8-f0d4cbcdd764)
+**No omitir poner el siguiente check cuando se crea el campo.**
+![image](https://github.com/andresdorado13/EvaluacionPracticaProContacto/assets/64713965/01019685-e31f-4269-adc6-2d580e0d703a)
+**Evidencia del campo idprocontacto creado**
+![image](https://github.com/andresdorado13/EvaluacionPracticaProContacto/assets/64713965/73692162-a08d-4144-9491-53ec0ca47cf8)
+
+4. Desarrollar un trigger para que cuando un usuario Modifica o Crea un contacto de Salesforce completando el campo generado el punto B con TU id obtenido en el punto A, se invoque al Web Service con el idprocontacto obtenga los datos de email de la respuesta y actualice el campo email del contacto. Usar Playground 1.
+   * Primero cree el trigger UpdateContactEmailTrigger en el objeto Contacto para despues de insertar y actualizar, el cual se verificara si el campo idprocontacto__c tiene un valor nulo o en blanco y más adelante se invoca el servicio web de manera asincrónica solo en el evento after insert.
+   ```apex
+   trigger UpdateContactEmailTrigger on Contact (after insert, after update) {
+      List<Id> contactIds = new List<Id>();
+      for (Contact contact : Trigger.new) {
+         if (String.isNotBlank(contact.idprocontacto__c)) {
+            contactIds.add(contact.Id);
+         }
+      }
+      if (!contactIds.isEmpty()) {
+         if (Trigger.isAfter && Trigger.isInsert) {
+            ContactWebService.updateContactEmail(contactIds);
+         }
+      }
+   }
+    ```
+   * Luego del trigger, hice la creación de una clase web service con el nombre de ContactWebService, el cual hacemos la construcción de la URL del servicio web utilizando el campo idprocontacto__c, realizo la llamada al servicio web utilizando HTTPRequest, luego creo un objeto HTTP para enviar la solicitud, procesamos la respuesta y analizamos la respuesta JSON para obtener el email y actualizamos el campo de email del contacto.
+   ```apex
+     public class ContactWebService {
+        @future(callout=true)
+        public static void updateContactEmail(List<Id> contactIds) {
+           List<Contact> contactsToUpdate = new List<Contact>();
+              for (Id contactId : contactIds) {
+                 Contact contact = [SELECT idprocontacto__c FROM Contact WHERE Id = :contactId AND idprocontacto__c != null LIMIT 1];
+                 if (contact != null && String.isNotBlank(contact.idprocontacto__c)) {
+                    String serviceURL = 'https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts/' + contact.idprocontacto__c + '.json';
+                    HttpRequest request = new HttpRequest();
+                    request.setEndpoint(serviceURL);
+                    request.setMethod('GET');
+                    request.setHeader('Content-Type', 'application/json');
+                    Http http = new Http();
+                    HttpResponse response = http.send(request);
+                    if (response.getStatusCode() == 200) {
+                       Map<String, Object> jsonResponse = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
+                       String email = (String) jsonResponse.get('email');
+                       contact.Email = email;
+                       contactsToUpdate.add(contact);
+                    }
+                 }
+              }
+              if (!contactsToUpdate.isEmpty()) {
+                 update contactsToUpdate;
+              }
+          }
+      }
+    ```
+   * Creo un contacto con mi nombre y mi ID obtenido en el punto 1, el cual es '-Nej2RiB0mG0TCDmss8_' (el campo correo queda vacio).
+![image](https://github.com/andresdorado13/EvaluacionPracticaProContacto/assets/64713965/a682821a-b277-4884-90a2-ed3e24615252)
+   * Al momento de crear el contacto, se confirma la creación de este y se evidencia la agregación del correo respectivamente.
+![image](https://github.com/andresdorado13/EvaluacionPracticaProContacto/assets/64713965/deaf2d9f-b78a-4661-b888-1db04205a86b)
+
