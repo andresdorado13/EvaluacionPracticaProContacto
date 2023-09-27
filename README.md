@@ -8,6 +8,7 @@ Este archivo esta hecho con el objetivo de aprender y mostrar mis conocimientos 
 * [Ejercicio 5](#ejercicio-5)
 * [Ejercicio 6](#ejercicio-6)
 * [Ejercicio 7](#ejercicio-7)
+* [Ejercicio 8](#ejercicio-8)
 
 ## Ejercicio 1
 ### Instalación de ambiente
@@ -240,3 +241,46 @@ Datos almacenados de forma estándar y como se relacionan los objetos en Salesfo
    * Al momento de crear el contacto, se confirma la creación de este y se evidencia la agregación del correo respectivamente.
 ![image](https://github.com/andresdorado13/EvaluacionPracticaProContacto/assets/64713965/deaf2d9f-b78a-4661-b888-1db04205a86b)
 
+# Ejercicio 8
+Corrección del ejercicio 7
+## Trigger
+```apex
+trigger UpdateContactEmailTrigger on Contact (after insert, after update) {
+   List<Id> contactIds = new List<Id>();
+   for (Contact contact : Trigger.new) {
+      if (String.isNotBlank(contact.idprocontacto__c)) {
+         contactIds.add(contact.Id);
+      }
+   }
+   if (!contactIds.isEmpty()) {
+      if ((Trigger.isAfter && Trigger.isInsert) || (Trigger.isAfter && Trigger.isUpdate)) {
+         ContactWebService.updateContactEmail(contactIds);
+      }
+   }
+}
+```
+
+## Web service
+```apex
+public class ContactWebService {
+   @future(callout=true)
+   public static void updateContactEmail(List<Id> contactIds) {
+      List<Contact> contactsToUpdate = [SELECT idprocontacto__c FROM Contact where Id IN : contactIds AND idprocontacto__c!=null];
+      for (Integer i=0 ; i<contactsToUpdate.size() ; i++) {
+         String serviceURL = 'https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts/' + contactsToUpdate[i].idprocontacto__c + '.json';
+         HttpRequest request = new HttpRequest();
+         request.setEndpoint(serviceURL);
+         request.setMethod('GET');
+         request.setHeader('Content-Type', 'application/json');
+         Http http = new Http();
+         HttpResponse response = http.send(request);
+         if (response.getStatusCode() == 200) {
+            Map<String, Object> jsonResponse = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
+            String email = (String) jsonResponse.get('email');
+            contactsToUpdate[i].Email = email;
+         }
+      }
+      update contactsToUpdate[i];
+   }
+}
+```
